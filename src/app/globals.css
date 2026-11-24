@@ -3,19 +3,19 @@
 @import 'tailwindcss/utilities.css' layer(utilities) source('../');
 
 @theme {
-  --color-ink: #12100d;
-  --color-canvas: #12100d;
-  --color-surface: #1d1a15;
-  --color-parchment: #eee8dc;
-  --color-text: #eee8dc;
-  --color-muted-parchment: #c2b9aa;
-  --color-text-muted: #b4aa9a;
-  --color-antique-gold: #a88f54;
-  --color-accent: #a88f54;
-  --color-accent-hover: #c1a96c;
-  --color-on-accent: #17140f;
-  --color-accent-text: #c1a96c;
-  --color-focus-ring: #d5bd7b;
+  --color-ink: #100e0b;
+  --color-canvas: #100e0b;
+  --color-surface: #1a1712;
+  --color-parchment: #f0eadf;
+  --color-text: #f0eadf;
+  --color-muted-parchment: #c8bead;
+  --color-text-muted: #bcb19f;
+  --color-antique-gold: #ad9460;
+  --color-accent: #ad9460;
+  --color-accent-hover: #c1a973;
+  --color-on-accent: #15120d;
+  --color-accent-text: #c1a973;
+  --color-focus-ring: #dfc991;
   --color-transparent: transparent;
   --color-header: rgb(18 16 13 / 88%);
   --color-control: #211e18;

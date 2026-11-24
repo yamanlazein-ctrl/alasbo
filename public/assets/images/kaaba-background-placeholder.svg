@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" role="img" aria-label="Atmospheric placeholder for the missing Kaaba background image">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0.92" y2="1"><stop stop-color="#17140f"/><stop offset=".52" stop-color="#12100d"/><stop offset="1" stop-color="#0e0c0a"/></linearGradient>
+    <radialGradient id="haze" cx="72%" cy="44%" r="62%"><stop stop-color="#9b8050" stop-opacity=".16"/><stop offset=".52" stop-color="#66563b" stop-opacity=".07"/><stop offset="1" stop-color="#100e0b" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="48%" r="75%"><stop stop-color="#100e0b" stop-opacity="0"/><stop offset="1" stop-color="#100e0b" stop-opacity=".72"/></radialGradient>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#night)"/>
+  <rect width="1800" height="1200" fill="url(#haze)"/>
+  <rect width="1800" height="1200" fill="url(#vignette)"/>
+</svg>
