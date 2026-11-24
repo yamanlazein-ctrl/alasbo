@@ -29,7 +29,6 @@ function buildEntrance(root: HTMLElement) {
 
   const bg = root.querySelector<HTMLElement>('[data-hero-motion="background"] img')
   const portrait = root.querySelector<HTMLElement>('[data-hero-motion="portrait"]')
-  const portraitImg = portrait?.querySelector<HTMLElement>('.hero__portrait-img')
   const headlines = root.querySelectorAll<HTMLElement>('[data-hero-motion="headline"] > i')
   const support = root.querySelector<HTMLElement>('[data-hero-motion="support"]')
   const search = root.querySelector<HTMLElement>('[data-hero-motion="search"]')
@@ -41,9 +40,9 @@ function buildEntrance(root: HTMLElement) {
   }
 
   // 2. Sheikh fade in: translateY 24 -> 0, blur 8 -> 0, 1200ms, delay 300ms
-  if (portrait && portraitImg) {
+  if (portrait) {
     gsap.set(portrait, { opacity: 0, y: 24, filter: 'blur(8px)' })
-    tl.to(portrait, { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1.2, clearProps: 'filter,transform' }, 0.3)
+    tl.to(portrait, { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1.2, clearProps: 'filter,transform,opacity' }, 0.3)
   }
 
   // 3. Name lines reveal upward through mask, 120ms stagger, delay 500ms

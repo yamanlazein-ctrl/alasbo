@@ -15,7 +15,6 @@ export function SiteMotion() {
       ticking = false
       const y = window.scrollY
       const scrollingDown = y > lastY
-      const pastThreshold = y > 72
 
       // Scrolled: blurred dark backdrop + hairline
       header.classList.toggle('site-header--scrolled', y > 72)
