@@ -34,3 +34,4 @@ test-results/
 /public/fonts/thmanyah/**/*.woff
 /public/fonts/thmanyah/**/*.otf
 /public/fonts/thmanyah/**/*.ttf
+.env
