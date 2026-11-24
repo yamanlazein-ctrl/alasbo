@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { ScrollProvider } from '../components/scroll-provider'
 import { siteDescription, siteTitle } from '../content/site'
 import { getSiteUrl } from './site-url'
+import { amiri, plexSansArabic } from './fonts'
 import 'lenis/dist/lenis.css'
 import './globals.css'
 
@@ -16,22 +17,13 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#060603',
+  themeColor: '#0E0C0A',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="ar" dir="rtl">
-      <head>
-        <link
-          rel="preload"
-          href="/fonts/thmanyah/serif-display/thmanyah-serif-display-500.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </head>
-      <body className="min-h-svh overflow-x-hidden bg-canvas font-secondary text-body text-text">
+    <html lang="ar" dir="rtl" className={`${amiri.variable} ${plexSansArabic.variable}`}>
+      <body className="min-h-svh overflow-x-hidden bg-base text-body text-cream">
         <ScrollProvider>{children}</ScrollProvider>
       </body>
     </html>

@@ -71,15 +71,15 @@ export function MobileNavigation({ activeHref }: { activeHref: string }) {
       </button>
 
       {menuHost && createPortal(
-        <div className="mobile-navigation fixed inset-0 -z-1 pointer-events-auto" id="mobile-navigation">
+        <div className="mobile-navigation fixed inset-0 z-[60]" id="mobile-navigation">
           <button
-            className="mobile-navigation__backdrop absolute inset-0 w-full"
+            className="mobile-navigation__backdrop"
             type="button"
             tabIndex={-1}
             aria-label="إغلاق قائمة التنقل"
             onClick={close}
           />
-          <nav className="mobile-navigation__panel absolute grid gap-1" ref={panelRef} aria-label="التنقل على الهاتف" data-lenis-prevent>
+          <nav className="mobile-navigation__panel" ref={panelRef} aria-label="التنقل على الهاتف" data-lenis-prevent>
             {navigation.map((item) => (
               <Link
                 key={item.href}

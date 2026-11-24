@@ -24,9 +24,9 @@ export function SearchShortcut() {
   }
 
   return (
-    <button className="nav-search" type="button" onClick={focusSearch}>
-      <span>ابحث في الأرشيف</span>
-      <span className="nav-search__icon" aria-hidden="true"><Search /></span>
+    <button className="nav-search" type="button" onClick={focusSearch} aria-label="ابحث في الأرشيف">
+      <Search />
+      <span className="hidden lg:inline">ابحث في الأرشيف</span>
     </button>
   )
 }

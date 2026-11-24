@@ -1,7 +1,7 @@
 'use client'
 
 import { type FormEvent, useEffect, useRef, useState } from 'react'
-import { Mic, Square } from 'lucide-react'
+import { Mic, Search, Square } from 'lucide-react'
 import { examples } from '../content/site'
 import { useVoiceSearch } from './use-voice-search'
 
@@ -53,10 +53,8 @@ export function ScholarlySearch() {
       data-hero-motion="search"
       role="search"
     >
-      <label className="label inline-block font-bold" htmlFor="archive-query">
-        اسأل سؤالاً
-      </label>
       <div className={`search-surface${error ? ' search-surface--error' : ''}`}>
+        <span className="search-surface__icon" aria-hidden="true"><Search /></span>
         <input
           ref={inputRef}
           id="archive-query"
@@ -87,7 +85,7 @@ export function ScholarlySearch() {
         >
           {voice.state === 'listening' ? <Square aria-hidden="true" /> : <Mic aria-hidden="true" />}
         </button>
-        <button className="button button--primary search-submit" type="submit" disabled={voiceActive}>
+        <button className="search-submit" type="submit" disabled={voiceActive}>
           ابحث
         </button>
       </div>
@@ -95,7 +93,7 @@ export function ScholarlySearch() {
       <p className="search-error" id="search-error" role="alert" aria-live="polite">
         {error}
       </p>
-      <div className="search-examples flex flex-wrap gap-x-4" role="group" aria-label="أسئلة مقترحة">
+      <div className="search-examples" role="group" aria-label="أسئلة مقترحة">
         {examples.map((example) => (
           <button
             className="search-example"
