@@ -1,0 +1,36 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+.turbo/
+.vercel/
+next-env.d.ts
+*.tsbuildinfo
+.env*
+!.env.example
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Local design review, recordings, and media processing
+.agents/
+.taste/
+.taste-skill/
+.unslopovich/
+.local-media/
+screenshots/
+playwright-report/
+test-results/
+
+# Obtain Thmanyah font binaries from its publisher for licensed local use.
+/public/fonts/thmanyah/**/*.woff2
+/public/fonts/thmanyah/**/*.woff
+/public/fonts/thmanyah/**/*.otf
+/public/fonts/thmanyah/**/*.ttf
