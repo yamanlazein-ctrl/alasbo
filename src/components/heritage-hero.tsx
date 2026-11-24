@@ -53,7 +53,7 @@ export function HeritageHero() {
           fill
           priority
           sizes="(max-width: 1024px) 86vw, 48vw"
-          className="relative z-10 object-contain object-bottom saturate-[0.82] sepia-[0.12] contrast-[0.97] drop-shadow-[0_1rem_2.4rem_rgba(13,10,6,0.42)] [mask-image:linear-gradient(to_bottom,black_0%,black_90%,transparent_100%)]"
+          className="relative z-10 object-contain object-bottom saturate-[0.82] sepia-[0.12] contrast-[0.97] drop-shadow-[0_0_0.75rem_rgba(173,148,96,0.12)] drop-shadow-[0_1rem_2.4rem_rgba(13,10,6,0.42)] [mask-image:radial-gradient(ellipse_96%_100%_at_50%_48%,black_78%,transparent_100%),linear-gradient(to_bottom,black_0%,black_90%,transparent_100%)] [mask-composite:intersect]"
         />
       </motion.figure>
     </section>
