@@ -1,10 +1,13 @@
 import { LibraryEntrance } from './library-entrance'
 import { Hero } from './hero'
+import { HeritageHome } from './heritage-home'
 import { SiteHeader } from './site-header'
 import { SiteMotion } from './site-motion'
 
 export default function PlatformLanding({ activeHref }: { activeHref: string }) {
   const isHome = activeHref === '/'
+
+  if (isHome) return <HeritageHome />
 
   return (
     <div className="site min-h-svh">
