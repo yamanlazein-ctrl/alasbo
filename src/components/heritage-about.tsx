@@ -47,7 +47,7 @@ export function HeritageAbout() {
           <p>صاحب كتاب صفوة التفاسير</p>
         </div>
         <Link
-          href="/about"
+          href="/search?q=الشيخ%20محمد%20علي%20الصابوني"
           prefetch={false}
           className="mt-8 inline-flex min-h-12 items-center gap-3 border-b border-antique-gold/75 pb-1 text-sm font-semibold text-parchment transition-colors duration-[var(--duration-quick)] ease-heritage hover:text-antique-gold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus-ring"
         >
